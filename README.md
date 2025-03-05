@@ -1,5 +1,5 @@
 # Scala Spark Config-Driven Framework Documentation
-
+GPT Name - "Scala Spark Framework"
 ## Overview
 This is a **modular, reusable, config-driven data processing framework** built on **Scala + Apache Spark**, designed to allow teams to process data dynamically with minimal code by feeding configuration files. The framework is packaged as a **JAR** and can be extended by other teams through custom Scala objects and config files.
 
