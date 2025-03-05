@@ -1,0 +1,20 @@
+## Interview Questions
+
+### Conceptual Questions:
+1. Why did you choose a hybrid OOP + FP approach for this framework?
+2. What are the benefits of using a config-driven pipeline?
+3. How does immutability help in Spark pipelines?
+4. How do you manage schema evolution in such a dynamic framework?
+5. What are some pitfalls of building pluggable frameworks in Spark?
+6. Compare the pros and cons of JSON vs. YAML vs. HOCON for configs.
+7. What is the difference between `foldLeft` and `reduce` in functional design?
+8. How does Spark handle lazy evaluation, and how would that affect a modular pipeline?
+
+### Scenario-Based Questions:
+1. "If a new source system is introduced (e.g., Kafka), how would you plug that into the existing framework?"
+2. "Suppose a validation fails during processing. How does your framework handle this? Can it skip the step, quarantine the data, or stop the pipeline?"
+3. "Your transformation module needs to support dynamic SQL queries from the config. How would you safely implement this?"
+4. "You have 20 different teams using your framework. How do you ensure backward compatibility when releasing new versions?"
+5. "You have to process extremely large datasets. How would you ensure that the framework performs optimally in terms of partitioning and resource usage?"
+6. "What happens if two modules (say, a validator and a transformer) both modify the same column? How would you architect the system to avoid unintended side effects?"
+7. "The pipeline needs to support both batch and streaming modes. How would you design your sources and sinks to abstract that?"
